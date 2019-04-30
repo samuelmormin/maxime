@@ -1,0 +1,260 @@
+/* téléchargement d'une police originale */
+@font-face {
+	font-family: 'Gotham';
+	src: url('font/GothamLight.ttf') format('truetype');
+
+	font-family: 'GothamB';
+	src: url('font/GothamBook.ttf');
+
+	font-family: 'GothamG';
+	src: url('font/GothamBold.ttf');
+
+	font-family: 'Pickle';
+	src: url('font/electric-pickle.ttf');
+}
+
+/* Définition des poilices*/
+p{
+	font-family: 'Gotham', Trebuchet MS;
+	text-align: justify;
+	font-size: 1em;
+}
+
+header h1{
+	font-family: 'Pickle', 'GothamG', Trebuchet MS;
+	font-size: 2.5em;
+	color: rgb(150, 232, 86);
+	line-height: 55px;
+}
+
+h1{
+	font-family: 'GothamG', Trebuchet MS;
+	font-size: 1.8em;
+}
+
+h2{
+	font-family: 'GothamB', Trebuchet MS;
+	font-size: 1.5em;
+}
+
+/*Intégration des spécifités générales */
+body{
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	display: flex;
+	justify-content: space-around;
+	height: 100px;
+	margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+	background-image: url(images/wallp.jpg);
+}
+
+.icone {
+	width: 8%;
+	height: auto;
+}
+
+nav {
+	background-color: rgb(84,142,41);
+	height : 50px;
+	line-height: 50px;
+}
+
+nav ul {
+	display: contents;
+    width: 100%;
+    list-style-type: none;
+}
+
+nav ul li {
+	border-right: 1px solid white;
+    width: 33.28%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	width: 100%;
+	display: block;
+	font-family: Trebuchet MS;
+	font-size: 1em;
+}
+
+nav ul li a:hover {
+	background: rgba(27, 94, 32, 0.6);
+	transition: 0.7s;
+	-webkit-transition: 0.7s;
+	text-decoration: underline;
+}
+
+nav ul li a.active {
+	background: rgba(27, 94, 32, 0.6);
+}
+
+nav li:nth-child(3) {
+	border-right: none;
+}
+
+.bandeau {
+	border-top: 1px solid #dadada;
+}
+
+.bandeau:nth-child(1){
+	border-top: none;
+}
+
+.bandeau:nth-child(odd) {
+	background-color: #f2f2f2;
+	padding-bottom: 3.5%;
+	padding-right: 1%;
+	padding-left: 3.5%;
+	padding-top: 1.5%;
+}
+
+.bandeau:nth-child(even) {
+	background-color: white;
+	padding-bottom: 3.5%;
+	padding-right: 1%;
+	padding-left: 3.5%;
+	padding-top: 1.5%;
+}
+
+.content {
+	vertical-align: middle;
+	display: inline-flex;
+}
+
+.content img {
+	height: 200px;
+	width: auto;
+	max-width: 33.3%;
+	border: 2px solid rgb(67, 87, 102);
+	margin-right: 25px;
+}
+
+.content p {
+	width: 66.6%;
+	padding-right: 25px;
+}
+
+footer
+{
+	background-color: rgb(57,58,58);
+	height: 75px;
+	line-height: 75px;
+}
+
+footer p
+{
+	text-align: center;
+	color: white;
+	margin: 0;
+}
+
+/* Intégration des spécificités de la page Espèces */
+table{
+	width: 100%;
+	border-spacing: 0;
+}
+
+th {
+	padding-top: 25px;
+	border-right: 1px solid #dadada;
+}
+
+th img{
+	align-content: center;
+	height: 250px;
+	width: auto;
+	border: 2px solid rgb(67, 87, 102);
+}
+
+th h1{
+	font-family: 'GothamB', Trebuchet MS;
+	font-size: 1.3em;
+	text-decoration: underline;
+	text-align: center;
+}
+
+th p{
+	text-align: center;
+}
+
+.bande th{
+	border-bottom: 1px solid #dadada;
+}
+
+.carre{
+	background-color: #f2f2f2;
+	padding-right: 0;
+	padding-left: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.carre_2{
+	background-color: white;
+
+}
+
+/* Intégration des spécificités de la page Recettes */
+
+aside{
+	width: 25%;
+	position: fixed;
+	right: 2.5%;
+	border: 2px solid rgb(67, 87, 102);
+	margin-top: 30px;
+	background-color: rgb(84,142,41);
+}
+
+aside ul{
+	list-style-type: none;
+}
+
+aside a {
+	text-decoration: none;
+	color: white;
+	font-family: 'Gotham', Trebuchet MS;
+	font-size: 1.3em;
+
+}
+
+aside a:hover {
+	text-decoration: underline;
+	font-style: italic;
+}
+
+aside li{
+	margin-top: 10px;
+}
+
+.recette {
+	vertical-align: middle;
+	display: flex;
+	justify-content: space-between;
+	width: 70%;
+}
+
+.recette img {
+	right: 0;
+	height: 200px;
+	width: auto;
+	max-width: 33.3%;
+	border: 2px solid rgb(67, 87, 102);
+}
+
+.recette li{
+	font-family: 'Gotham', Trebuchet MS;: 
+}
+
+.recette p {
+	width: 66.6%;
+	padding-right: 25px;
+}

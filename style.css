@@ -74,7 +74,8 @@ nav ul li {
 	border-right: 1px solid white;
     width: 33.28%;
     float: left;
-    text-align: center;
+	text-align: center;
+	box-sizing: border-box;
 }
 
 nav ul li a {
